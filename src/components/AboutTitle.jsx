@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 class AboutTitle extends Component {
   render() {
     return (
-      <div>
+      <Jumbotron fluid>
         <h1>{`< About />`}</h1>
-      </div>
+      </Jumbotron>
     );
   }
 }

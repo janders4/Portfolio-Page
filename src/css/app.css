@@ -2,3 +2,42 @@
   background-color: #272727;
   color: #747474;
 }
+
+.app {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 10fr 1fr;
+  grid-template-areas:
+    "main"
+    "externalLinks";
+}
+
+.main {
+  height: 100%;
+  grid-area: main;
+}
+
+.homeContainer {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "about"
+    "portfolio";
+}
+.aboutTitle {
+  grid-area: about;
+}
+.portfolioTitle {
+  grid-area: portfolio;
+}
+.contactLink {
+  grid-area: contact;
+}
+
+.externalLinks {
+  grid-area: externalLinks;
+}
